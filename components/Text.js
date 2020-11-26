@@ -9,7 +9,7 @@ export default TextStyle;
 
 const Text = styled.Text`
   font-family: 'Roboto';
-  color: ${props => (props.color ? '#fff' : '#fff')};
+  color: ${props => (props.color ? '#9a9a9a' : '#fff')};
 
   ${({ title, large, medium, small }) => {
     switch (true) {

@@ -42,7 +42,7 @@ const games = [
     id: 3,
     title: 'Ori and the Will of the Wisps',
     teaser:
-      'Embark on a new journey in a vast, exotic world where you’ll encounter towering enemies and challenging puzzles',
+      'Embark on a new journey in a vast, exotic world where you’ll encounter towering enemies and challenging puzzles.',
     description:
       'The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm’s way, it will take more than bravery to bring a family back together, heal a broken land, and discover Ori’s true destiny.',
     rating: 4.7,

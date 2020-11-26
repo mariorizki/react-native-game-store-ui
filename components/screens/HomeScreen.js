@@ -1,12 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { StatusBar } from 'react-native';
 import styled from 'styled-components';
+import { Entypo } from '@expo/vector-icons';
 
 import Text from '../Text';
 import categoryList from '../../data/categories';
 import games from '../../data/games';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const gameRef = useRef();
   const changeCategory = category => {
@@ -16,7 +17,7 @@ const HomeScreen = () => {
 
   const GameItem = game => {
     return (
-      <Game>
+      <Game onPress={() => navigation.navigate('GameScreen', { game: game })}>
         <GameCover source={game.cover} />
         <GameInfo backgroundColor={game.backgroundColor}>
           <GameImage source={game.cover} />
