@@ -17,7 +17,7 @@ const HomeScreen = ({ navigation }) => {
 
   const GameItem = game => {
     return (
-      <Game onPress={() => navigation.navigate('GameScreen', { game: game })}>
+      <Game onPress={() => navigation.navigate('GameScreen', { game })}>
         <GameCover source={game.cover} />
         <GameInfo backgroundColor={game.backgroundColor}>
           <GameImage source={game.cover} />

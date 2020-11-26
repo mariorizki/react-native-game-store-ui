@@ -28,8 +28,9 @@ const ProfileScreen = () => {
       </Text>
 
       <Games
+        showsVerticalScrollIndicator={false}
         data={games.filter(item => {
-          return item.purchased;
+          return item.id % 2 !== 0;
         })}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (

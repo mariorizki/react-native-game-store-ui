@@ -17,8 +17,7 @@ const games = [
       require('../assets/destiny2-5.jpg'),
       require('../assets/destiny2-6.jpg')
     ],
-    backgroundColor: '#3A55A2',
-    purchased: true
+    backgroundColor: '#3A55A2'
   },
   {
     id: 2,
@@ -97,6 +96,44 @@ const games = [
       require('../assets/zoo-6.jpg')
     ],
     backgroundColor: '#264112'
+  },
+  {
+    id: 6,
+    title: 'Spirit of The North',
+    teaser:
+      'Spirit of the North is a single-player 3rd-person adventure game inspired by the breathtaking and mysterious landscapes of Iceland.',
+    description:
+      'Play as an ordinary red fox whose story becomes entwined with the guardian of the Northern Lights, a female spirit fox.',
+    rating: 4.1,
+    category: ['Casual', 'indie'],
+    age: '8+',
+    cover: require('../assets/spirit-1.jpg'),
+    screenshots: [
+      require('../assets/spirit-2.jpg'),
+      require('../assets/spirit-3.jpg'),
+      require('../assets/spirit-4.jpg'),
+      require('../assets/spirit-5.jpg')
+    ],
+    backgroundColor: '#161712'
+  },
+  {
+    id: 7,
+    title: 'Octopath Traveler',
+    teaser:
+      'Eight travelers. Eight adventures. Eight roles to play. Embark on an epic journey across the vast and wondrous world of Orsterra.',
+    description:
+      '- Play as eight different characters, each with their own stories to uncover and side quests to complete.\n- Explore the enchanting yet perilous world of Orsterra, spanning 8 vast regions and discover each character’s full story as their journey unfolds.\n- Use each character’s distinctive abilities (Path Actions), skills and talents in frenetic battles',
+    rating: 5,
+    category: ['RPG'],
+    age: '13+',
+    cover: require('../assets/octopath-1.jpg'),
+    screenshots: [
+      require('../assets/octopath-2.jpg'),
+      require('../assets/octopath-3.jpg'),
+      require('../assets/octopath-4.jpg'),
+      require('../assets/octopath-5.jpg')
+    ],
+    backgroundColor: '#524324'
   }
 ];
 

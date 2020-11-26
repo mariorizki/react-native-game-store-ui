@@ -6,7 +6,7 @@ import { Entypo } from '@expo/vector-icons';
 import Text from '../Text';
 import games from '../../data/games';
 
-const LiveScreen = () => {
+const LiveScreen = ({ navigation }) => {
   return (
     <Container>
       <StatusBar barStyle="light-content" />
@@ -34,11 +34,14 @@ const LiveScreen = () => {
 
         <PopularGames horizontal={true} showHorizontalScrollIndicator={false}>
           {games.map((game, index) => {
-            return (
-              <PopularGameContainer key={index}>
+            return game.id % 2 === 1 ? (
+              <PopularGameContainer
+                onPress={() => navigation.navigate('GameScreen', { game })}
+                key={index}
+              >
                 <PopularGame source={game.cover}></PopularGame>
               </PopularGameContainer>
-            );
+            ) : null;
           })}
         </PopularGames>
       </SectionContainer>
@@ -114,7 +117,7 @@ const PopularGames = styled.ScrollView`
   margin: 16px 0 16px -16px;
 `;
 
-const PopularGameContainer = styled.View`
+const PopularGameContainer = styled.TouchableOpacity`
   width: 80px;
   margin: 0 13px;
 `;
