@@ -39,12 +39,10 @@ const HomeScreen = ({ navigation }) => {
         <Text large>
           Hello{' '}
           <Text large heavy>
-            User,
+            Username,
           </Text>
           {`\n`}
-          <Text large heavy>
-            Best games for today
-          </Text>
+          <Text large>Welcome back</Text>
         </Text>
         <Avatar source={require('../../assets/avatar.png')} />
       </Header>
@@ -143,6 +141,7 @@ const GameInfo = styled.View`
   border-radius: 12px;
   flex-direction: row;
   align-items: center;
+  elevation: 5;
 `;
 
 const GameImage = styled.Image`
@@ -153,4 +152,5 @@ const GameImage = styled.Image`
 
 const GameTitle = styled.View`
   margin: 0 24px;
+  flex: 1;
 `;

@@ -110,6 +110,7 @@ const BackButton = styled.TouchableOpacity`
   position: absolute;
   top: 28px;
   left: 16px;
+  elevation: 5;
 
   background-color: #819ee5;
 
@@ -127,9 +128,7 @@ const GameInfoContainer = styled.View`
   margin: 8px 16px;
 `;
 
-const GameThumbContainer = styled.View`
-  elevation: 3;
-`;
+const GameThumbContainer = styled.View``;
 
 const GameThumb = styled.Image`
   width: 80px;
@@ -143,7 +142,7 @@ const GameInfo = styled.View`
   margin: 0 8px 0 16px;
 `;
 
-const Download = styled.View`
+const Download = styled.TouchableOpacity`
   background-color: #819ee5;
   width: 40px;
   height: 40px;

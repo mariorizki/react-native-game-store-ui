@@ -116,7 +116,7 @@ const PopularGames = styled.ScrollView`
 
 const PopularGameContainer = styled.View`
   width: 80px;
-  margin: 0 16px;
+  margin: 0 13px;
 `;
 
 const PopularGame = styled.Image`

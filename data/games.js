@@ -17,7 +17,8 @@ const games = [
       require('../assets/destiny2-5.jpg'),
       require('../assets/destiny2-6.jpg')
     ],
-    backgroundColor: '#3A55A2'
+    backgroundColor: '#3A55A2',
+    purchased: true
   },
   {
     id: 2,
@@ -36,7 +37,7 @@ const games = [
       require('../assets/unforeseen-4.jpg'),
       require('../assets/unforeseen-5.jpg')
     ],
-    backgroundColor: '#9F6B82'
+    backgroundColor: '#84637A'
   },
   {
     id: 3,
@@ -55,8 +56,52 @@ const games = [
       require('../assets/ori-4.jpg'),
       require('../assets/ori-5.jpg')
     ],
-    backgroundColor: '#AC8C4C'
+    backgroundColor: '#AC8C4C',
+    purchased: true
+  },
+  {
+    id: 4,
+    title: 'Need for Speed™ Heat Deluxe Edition',
+    teaser:
+      'Hustle by day and risk it all at night in Need for Speed™ Heat Deluxe Edition.',
+    description:
+      'A thrilling race experience pits you against a city’s rogue police force as you battle your way into street racing’s elite.',
+    rating: 4,
+    category: ['Racing', 'Sports', 'Multiplayer'],
+    age: '8+',
+    cover: require('../assets/nfs-1.jpg'),
+    screenshots: [
+      require('../assets/nfs-2.jpg'),
+      require('../assets/nfs-3.jpg'),
+      require('../assets/nfs-4.jpg'),
+      require('../assets/nfs-5.jpg')
+    ],
+    backgroundColor: '#34627D'
+  },
+  {
+    id: 5,
+    title: 'Planet Zoo',
+    teaser:
+      'Build a world for wildlife in Planet Zoo. From the developers of Planet Coaster and Zoo Tycoon comes the ultimate zoo sim.',
+    description:
+      'Construct detailed habitats, manage your zoo, and meet authentic living animals who think, feel and explore the world you create around them.',
+    rating: 4.8,
+    category: ['Simulation', 'Strategy'],
+    age: '3+',
+    cover: require('../assets/zoo-1.jpg'),
+    screenshots: [
+      require('../assets/zoo-2.jpg'),
+      require('../assets/zoo-3.jpg'),
+      require('../assets/zoo-4.jpg'),
+      require('../assets/zoo-5.jpg'),
+      require('../assets/zoo-6.jpg')
+    ],
+    backgroundColor: '#264112'
   }
 ];
 
 export default games;
+
+// {
+//   title: 'Sonic & SEGA All-Stars Racing'
+// }
