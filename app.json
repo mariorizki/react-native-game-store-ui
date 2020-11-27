@@ -18,13 +18,17 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.mario.gamestore",
+      "versionCode": 1.1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#343434"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Game store app user interface",
+    "githubUrl": "https://github.com/mariorizki/react-native-game-store-ui"
   }
 }

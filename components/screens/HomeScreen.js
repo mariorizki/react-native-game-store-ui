@@ -47,7 +47,7 @@ const HomeScreen = ({ navigation }) => {
         <Avatar source={require('../../assets/avatar.png')} />
       </Header>
 
-      <Categories horizontal={true} showHorizontalScrollIndicator={false}>
+      <Categories horizontal={true} showsHorizontalScrollIndicator={false}>
         {categoryList.map((category, index) => {
           return (
             <Category key={index} onPress={() => changeCategory(category)}>

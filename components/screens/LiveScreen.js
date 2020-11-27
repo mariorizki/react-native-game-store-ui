@@ -32,7 +32,7 @@ const LiveScreen = ({ navigation }) => {
           Popular Games
         </Text>
 
-        <PopularGames horizontal={true} showHorizontalScrollIndicator={false}>
+        <PopularGames horizontal={true} showsHorizontalScrollIndicator={false}>
           {games.map((game, index) => {
             return game.id % 2 === 1 ? (
               <PopularGameContainer
